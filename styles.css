@@ -1,0 +1,130 @@
+body {
+    width: 375px;
+    margin: 0 auto;
+    background-color: #121212;
+}
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.color-white {
+    color: #F9FAFB;
+}
+
+#navigation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("images/movie-background.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    filter: brightness(100%);
+    background-color: #0E0E0E;
+    position: relative;
+    margin: auto;
+}
+
+#search-bar {
+    display: flex;
+    justify-content: center;
+    height: 38px;
+    width: 90%;
+    margin: auto;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #2E2E2F;
+    position: relative;
+    top: -20px;
+}
+
+#movie-input {
+    border: none;
+    width: 100%;
+    color: #A5A5A5;
+    background-color: #2E2E2F;
+}
+
+#movie-input:focus {
+    outline: none;
+}
+
+#search-button {
+    border: none;
+    background-color: #4B4B4B;
+    color: white;
+    padding: 0 20px;
+}
+
+#search-icon {
+    height: fit-content;
+    margin: auto;
+    padding: 0 10px;
+}
+
+#navigation h1 {
+    margin-right: 38px;
+    text-shadow: white 1px 1px 120px;
+}
+
+#navigation p {
+    font-size: 12px;
+    text-shadow: white 1px 1px 120px;
+}
+
+.movie-item {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.movie-item img {
+    height: 147px;
+    margin-right: 12px;
+}
+
+.add-movie-btn {
+    height: 15px !important; 
+    margin-left: 5px !important;
+}
+
+.remove-movie-btn {
+    height: 15px !important; 
+    margin-left: 5px !important;
+}
+
+.rating-text {
+    font-size: 12px;
+}
+
+.runtime {
+    font-size: 14px;
+}
+
+.plot {
+    font-size: 12px;
+}
+
+.genres {
+    margin-left: 5px;
+}
