@@ -12,7 +12,7 @@ let movieTitles = []
 let onWatchList = false
 
 searchBtn.addEventListener("click", async function() {
-    await fetch(`http://www.omdbapi.com/?s=${searchValue.value}&page=1&apikey=c37e1619`)
+    await fetch(`https://www.omdbapi.com/?s=${searchValue.value}&page=1&apikey=c37e1619`)
     .then(res => res.json())
     .then(data => {
         data.Search.forEach(movie => {
@@ -27,7 +27,7 @@ searchBtn.addEventListener("click", async function() {
     movieList.innerHTML = ""
 
     for (const title of movieTitles) {
-        await fetch(`http://www.omdbapi.com/?apikey=c37e1619&t=${title}&type=movie`)
+        await fetch(`https://www.omdbapi.com/?apikey=c37e1619&t=${title}&type=movie`)
             .then(res => res.json())
             .then(data => {
                 if (data.Poster && data.Poster !== "N/A") { // Only show movies with valid posters
@@ -116,7 +116,7 @@ async function displayWatchlist() {
         movieList.innerHTML = ""
         
         for (let movieId of watchList) {
-            await fetch (`http://www.omdbapi.com/?apikey=c37e1619&i=${movieId}`)
+            await fetch (`https://www.omdbapi.com/?apikey=c37e1619&i=${movieId}`)
             .then (res => res.json())
             .then (data => {
                 movieList.innerHTML += `
@@ -133,6 +133,7 @@ async function displayWatchlist() {
             })
         }
 }
+
 
 
 
